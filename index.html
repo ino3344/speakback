@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>SpeakBack — 即时口语反应训练</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+KR:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+KR:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF9F6;
+      --surface: #FFFFFF;
+      --surface-subtle: #F3F1EC;
+      --ink: #181817;
+      --ink-secondary: #5C5B57;
+      --ink-muted: #8E8C86;
+      --border: #E5E2DC;
+      --border-strong: #181817;
+      --accent: #3F5E4D;
+      --accent-soft: #EBF1ED;
+      --saved: #9E473B;
+      --saved-soft: #F9EEEC;
+      --new-badge: #8C5A2B;
+      --new-soft: #F7EFE6;
+      --radius: 12px;
+      --font-serif: 'Instrument Serif', 'Noto Serif KR', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', 'Noto Sans KR', 'Noto Sans SC', -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    .app-shell {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 18px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(250, 249, 246, 0.94);
+      backdrop-filter: blur(8px);
+      z-index: 20;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .brand-issue {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+
+    .nav-saved-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 7px 13px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .nav-saved-btn:hover {
+      border-color: var(--ink);
+    }
+
+    .nav-saved-btn.active {
+      background: var(--ink);
+      color: #FFF;
+      border-color: var(--ink);
+    }
+
+    .saved-count {
+      background: var(--surface-subtle);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 999px;
+    }
+
+    .nav-saved-btn.active .saved-count {
+      background: rgba(255, 255, 255, 0.2);
+      color: #FFF;
+    }
+
+    /* Update Banner */
+    .update-ribbon {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 11px 14px;
+      margin-top: 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 12px;
+      color: var(--ink-secondary);
+    }
+
+    .update-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .update-meta {
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* View Containers */
+    .view {
+      display: none;
+      animation: fadeIn 0.24s ease;
+    }
+
+    .view.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Home View */
+    .hero {
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(34px, 6vw, 46px);
+      line-height: 1.15;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: var(--ink-secondary);
+      max-width: 540px;
+      line-height: 1.75;
+    }
+
+    .lang-section {
+      padding-top: 28px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @media (max-width: 520px) {
+      .lang-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .lang-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 168px;
+    }
+
+    .lang-card:hover {
+      border-color: var(--ink);
+      transform: translateY(-2px);
+    }
+
+    .lang-code {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .lang-name {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .lang-sub {
+      font-size: 13px;
+      color: var(--ink-secondary);
+    }
+
+    .lang-arrow {
+      margin-top: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Breadcrumb / Back Bar */
+    .sub-header {
+      padding: 22px 0 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--ink-secondary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 0;
+    }
+
+    .back-btn:hover {
+      color: var(--ink);
+    }
+
+    .lang-pill-switch {
+      display: inline-flex;
+      background: var(--surface-subtle);
+      padding: 3px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-pill {
+      border: none;
+      background: transparent;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 999px;
+      color: var(--ink-secondary);
+      cursor: pointer;
+    }
+
+    .lang-pill.active {
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    }
+
+    /* Scene Grid */
+    .page-heading {
+      margin-bottom: 22px;
+    }
+
+    .page-heading h2 {
+      font-family: var(--font-serif);
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .page-heading p {
+      font-size: 14px;
+      color: var(--ink-secondary);
+    }
+
+    .scene-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .scene-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .scene-card:hover {
+      border-color: var(--ink);
+    }
+
+    .scene-info h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .scene-en-sub {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--ink-muted);
+    }
+
+    .scene-desc {
+      font-size: 13px;
+      color: var(--ink-secondary);
+    }
+
+    .scene-badge {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      background: var(--surface-subtle);
+      padding: 5px 11px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .new-pill {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      background: var(--new-soft);
+      color: var(--new-badge);
+      padding: 2px 7px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    /* Practice View */
+    .practice-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      font-size: 12px;
+      color: var(--ink-muted);
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 2px;
+      background: var(--border);
+      margin-bottom: 22px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--ink);
+      transition: width 0.25s ease;
+    }
+
+    .challenge-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      margin-bottom: 18px;
+    }
+
+    .card-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .tag-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .micro-tag {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 3px 9px;
+      border-radius: 6px;
+    }
+
+    .bookmark-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-secondary);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 11px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .bookmark-btn:hover {
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .bookmark-btn.saved {
+      border-color: var(--saved);
+      background: var(--saved-soft);
+      color: var(--saved);
+    }
+
+    .situation-box {
+      background: var(--surface-subtle);
+      border-radius: 8px;
+      padding: 13px 15px;
+      margin-bottom: 20px;
+      font-size: 13.5px;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+    }
+
+    .situation-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .prompt-block {
+      margin-bottom: 8px;
+    }
+
+    .speaker-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 8px;
+    }
+
+    .other-line {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .other-zh {
+      font-size: 13.5px;
+      color: var(--ink-secondary);
+    }
+
+    .think-prompt {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--border);
+      text-align: center;
+    }
+
+    .think-hint {
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin-bottom: 14px;
+    }
+
+    .reveal-btn {
+      width: 100%;
+      background: var(--ink);
+      color: #FFF;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.18s ease;
+    }
+
+    .reveal-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Answer Section */
+    .answer-panel {
+      display: none;
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      animation: fadeIn 0.22s ease;
+    }
+
+    .answer-panel.visible {
+      display: block;
+    }
+
+    .primary-answer {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 16px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 18px;
+    }
+
+    .answer-tag {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .native-line {
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.5;
+      margin-bottom: 5px;
+    }
+
+    .native-zh {
+      font-size: 14px;
+      color: var(--ink-secondary);
+    }
+
+    .alt-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .alt-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .alt-item {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg);
+    }
+
+    .alt-expr {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .alt-meaning {
+      font-size: 13px;
+      color: var(--ink-secondary);
+    }
+
+    .nuance-note {
+      font-size: 12.5px;
+      color: var(--ink-secondary);
+      background: var(--surface-subtle);
+      padding: 10px 13px;
+      border-radius: 8px;
+    }
+
+    .nav-controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .ctrl-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 13px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .ctrl-btn:hover:not(:disabled) {
+      border-color: var(--ink);
+    }
+
+    .ctrl-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .ctrl-btn.primary {
+      background: var(--ink);
+      color: #FFF;
+      border-color: var(--ink);
+    }
+
+    /* Saved / Review View */
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .filter-chip {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-secondary);
+      font-family: var(--font-sans);
+      font-size: 12.5px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .filter-chip.active {
+      background: var(--ink);
+      color: #FFF;
+      border-color: var(--ink);
+    }
+
+    .saved-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 12px;
+    }
+
+    .saved-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 8px;
+    }
+
+    .saved-meta-tag {
+      font-size: 11px;
+      color: var(--ink-muted);
+    }
+
+    .remove-btn {
+      background: none;
+      border: none;
+      font-size: 12px;
+      color: var(--saved);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .saved-situation {
+      font-size: 12.5px;
+      color: var(--ink-secondary);
+      margin-bottom: 10px;
+    }
+
+    .saved-main-expr {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .saved-main-zh {
+      font-size: 13.5px;
+      color: var(--ink-secondary);
+      margin-bottom: 10px;
+    }
+
+    .saved-alts {
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      font-size: 12.5px;
+      color: var(--ink-secondary);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 56px 20px;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      color: var(--ink-secondary);
+    }
+
+    .empty-state p {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: auto;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      background: var(--ink);
+      color: #FFF;
+      font-size: 13px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.22s ease;
+      z-index: 50;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand" onclick="goHome()">
+        <span class="brand-title">SpeakBack</span>
+        <span class="brand-issue" id="issueLabel">DAILY DRILL</span>
+      </div>
+      <button class="nav-saved-btn" id="navSavedBtn" onclick="openSavedView()">
+        <span>收藏复习</span>
+        <span class="saved-count" id="savedCountBadge">0</span>
+      </button>
+    </header>
+
+    <div class="update-ribbon" id="updateRibbon">
+      <div>
+        <span class="update-dot"></span>
+        <span id="updateSummaryText">正在加载最新每日情境库...</span>
+      </div>
+      <span class="update-meta" id="updateDateText">AUTO-SYNC</span>
+    </div>
+
+    <!-- 1. Home View -->
+    <main id="viewHome" class="view active">
+      <section class="hero">
+        <div class="eyebrow">Real-Time Oral Reflex</div>
+        <h1 class="hero-title">别在脑子里翻译，<br>用真实语境直接开口。</h1>
+        <p class="hero-desc">
+          专为已有基础、却在真实对话瞬间卡壳的学习者设计。先听见对方的话，在心里组织反应，再对照母语者最自然的表达。每日自动上新 10 组真实生活与追星现场情境。
+        </p>
+      </section>
+
+      <section class="lang-section">
+        <div class="section-label">
+          <span>选择训练语言 / Select Language</span>
+          <span id="totalPoolStat"></span>
+        </div>
+        <div class="lang-grid">
+          <button class="lang-card" onclick="selectLanguage('en')">
+            <div>
+              <div class="lang-code">ENGLISH · 01</div>
+              <div class="lang-name">English</div>
+              <div class="lang-sub">日常社交 · 旅行探索 · 追星现场 · 职场沟通</div>
+            </div>
+            <div class="lang-arrow">
+              <span id="enCountLabel">开始训练</span>
+              <span>→</span>
+            </div>
+          </button>
+
+          <button class="lang-card" onclick="selectLanguage('ko')">
+            <div>
+              <div class="lang-code">KOREAN · 02</div>
+              <div class="lang-name">한국어</div>
+              <div class="lang-sub">韩国日常 · 旅行 · 电视台预录 · 李相沅换卡 · 职场</div>
+            </div>
+            <div class="lang-arrow">
+              <span id="koCountLabel">开始训练</span>
+              <span>→</span>
+            </div>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- 2. Scene Selection View -->
+    <section id="viewScenes" class="view">
+      <div class="sub-header">
+        <button class="back-btn" onclick="goHome()">← 返回首页</button>
+        <div class="lang-pill-switch">
+          <button class="lang-pill" id="pillEn" onclick="selectLanguage('en')">English</button>
+          <button class="lang-pill" id="pillKo" onclick="selectLanguage('ko')">한국어</button>
+        </div>
+      </div>
+
+      <div class="page-heading">
+        <h2 id="scenePageTitle">选择训练场景</h2>
+        <p id="scenePageSub">挑选一个你最常遇到或即将面对的真实情境开始反应训练</p>
+      </div>
+
+      <div class="scene-list" id="sceneList"></div>
+    </section>
+
+    <!-- 3. Practice View -->
+    <section id="viewPractice" class="view">
+      <div class="sub-header">
+        <button class="back-btn" onclick="backToScenes()">← 返回场景列表</button>
+        <span style="font-size:12px;color:var(--ink-muted);" id="practiceSceneBadge"></span>
+      </div>
+
+      <div class="practice-meta">
+        <span id="progressText">第 1 / 1 题</span>
+        <span id="challengeDateBadge"></span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+
+      <article class="challenge-card" id="challengeCard"></article>
+
+      <div class="nav-controls">
+        <button class="ctrl-btn" id="prevBtn" onclick="prevChallenge()">← 上一题</button>
+        <button class="ctrl-btn primary" id="nextBtn" onclick="nextChallenge()">下一题 →</button>
+      </div>
+    </section>
+
+    <!-- 4. Saved / Review View -->
+    <section id="viewSaved" class="view">
+      <div class="sub-header">
+        <button class="back-btn" onclick="goHome()">← 返回首页</button>
+        <span style="font-size:12px;color:var(--ink-muted);">保存在当前浏览器本地</span>
+      </div>
+
+      <div class="page-heading">
+        <h2>收藏与复习本</h2>
+        <p>把没反应过来的地道表达存下来，随时拿出来过一遍</p>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-chip active" data-filter="all" onclick="setSavedFilter('all', this)">全部</button>
+        <button class="filter-chip" data-filter="en" onclick="setSavedFilter('en', this)">English</button>
+        <button class="filter-chip" data-filter="ko" onclick="setSavedFilter('ko', this)">한국어</button>
+      </div>
+
+      <div id="savedList"></div>
+    </section>
+
+    <footer class="footer">
+      <span>SpeakBack · Daily Oral Reflex Editorial</span>
+      <span>Data stored locally in your browser</span>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const STORAGE_KEY = 'speakback_saved_v2';
+    let memoryFallback = [];
+
+    function readSaved() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        return memoryFallback;
+      }
+    }
+
+    function writeSaved(list) {
+      memoryFallback = list;
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {}
+      updateSavedBadge();
+    }
+
+    const FALLBACK_DATA = {
+      lastUpdated: "2026-11-24",
+      dailyAddedCount: 10,
+      items: [
+        {
+          id: "ko-sanok-1",
+          lang: "ko",
+          scene: "sanok",
+          tag: "1차 인원체크 · 漏领打歌板",
+          addedDate: "2026-11-24",
+          situation: "电视台预录第一轮人员确认（1차 인원체크）时，饭经核对完名单却忘了给你发当天的打歌板（공방판）。",
+          other: "네, 확인되셨습니다. 다음 분 오실게요~",
+          otherZh: "好的，确认好了。下一位请过来～",
+          answer: "저기요! 방금 인원체크 했는데 제가 아직 공방판을 못 받아서요, 혹시 하나 주실 수 있나요?",
+          answerZh: "不好意思！刚刚做完人员确认，但我还没拿到打歌板，请问能给我一张吗？",
+          alternatives: [
+            { expr: "매니저님, 저 방금 체크했는데 공방판 누락된 것 같아요!", meaning: "经纪人（饭经），我刚刚核对过了，好像漏发我打歌板了！" },
+            { expr: "혹시 공방판은 여기서 바로 받는 건가요? 제가 아직 못 받아서요.", meaning: "请问打歌板是在这里直接领吗？我刚刚还没领到。" }
+          ],
+          note: "在韩国打歌预录现场，粉丝通常直接叫负责点名的 Staff 为 매니저님（经纪人）或 스태프님，打歌板统称 공방판（公开放送板）。"
+        },
+        {
+          id: "ko-fandom-1",
+          lang: "ko",
+          scene: "fandom",
+          tag: "快闪满额卡 · 现场求换李相沅",
+          addedDate: "2026-11-24",
+          situation: "快闪店抽完满额卡（럭키드로우），旁边同样在拆卡的粉丝问你本命是谁、想换谁的卡。",
+          other: "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+          otherZh: "请问你是谁的粉丝呀？在找谁的小卡呢？",
+          answer: "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+          answerZh: "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+          alternatives: [
+            { expr: "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?", meaning: "我在求相沅的卡！请问你抽到相沅了吗？" },
+            { expr: "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?", meaning: "我在找李相沅，请问你在求哪位成员呀？" }
+          ],
+          note: "韩圈换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）、누구 나오셨어요?（你抽到谁了？）。"
+        },
+        {
+          id: "ko-daily-1",
+          lang: "ko",
+          scene: "daily",
+          tag: "便利店 · 充值交通卡",
+          addedDate: "2026-11-24",
+          situation: "走进首尔便利店，把 T-money 交通卡递给店员想充值 1 万韩元现金。",
+          other: "어서 오세요. 도와드릴까요?",
+          otherZh: "欢迎光临，需要帮您什么？",
+          answer: "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+          answerZh: "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+          alternatives: [
+            { expr: "티머니 만 원 충전 부탁드립니다.", meaning: "麻烦帮我给 T-money 充 1 万韩元。" },
+            { expr: "이 카드에 만 원만 넣어 주세요.", meaning: "请帮我往这张卡里充 1 万韩元。" }
+          ],
+          note: "韩国便利店交通卡充值（충전）通常只收现金（현금），说 충전해 주세요 最地道。"
+        },
+        {
+          id: "ko-daily-2",
+          lang: "ko",
+          scene: "daily",
+          tag: "Daiso 大创 · 找高款折叠凳",
+          addedDate: "2026-11-24",
+          situation: "为了去电视台夜排，你在大创（다이소）看到一款太矮的折叠凳，想问店员有没有更高一点的款式。",
+          other: "찾으시는 물건 있으세요?",
+          otherZh: "请问有在找什么商品吗？",
+          answer: "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+          answerZh: "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+          alternatives: [
+            { expr: "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?", meaning: "露营用的折叠凳里，高度再高一点的放在哪里呀？" },
+            { expr: "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?", meaning: "有比这款椅子腿再长一点的型号吗？" }
+          ],
+          note: "折叠凳在韩国大创叫 접이식 의자 或 간이의자。"
+        },
+        {
+          id: "ko-daily-3",
+          lang: "ko",
+          scene: "daily",
+          tag: "打车去电视台 · 司机搭话",
+          addedDate: "2026-11-24",
+          situation: "大清早打车去上岩洞电视台，出租车大叔看你背着大包小包，好奇问你这么早去干嘛。",
+          other: "아침 일찍부터 방송국에는 무슨 일로 가세요?",
+          otherZh: "一大早去电视台是有什么事呀？",
+          answer: "제가 좋아하는 아이돌 음악방송 사녹 보러 가는 길이에요!",
+          answerZh: "我正要去电视台看我喜欢的爱豆打歌预录呢！",
+          alternatives: [
+            { expr: "아이돌 공개방송 방청 당첨돼서 아침부터 가고 있어요.", meaning: "抽中了爱豆公开放送的现场观众，一早就赶过去了。" },
+            { expr: "좋아하는 가수 컴백 무대 응원하러 방송국 가요!", meaning: "去电视台给喜欢的歌手回归舞台应援！" }
+          ],
+          note: "韩国司机大叔对 상암동（上岩洞 MBC/SBS/CJ）或 여의도（汝矣岛 KBS）看打歌很熟悉，说 사녹（사전녹화 预录）或 공방 都能听懂。"
+        },
+        {
+          id: "ko-daily-4",
+          lang: "ko",
+          scene: "daily",
+          tag: "不动产 · 咨询保证金与月租",
+          addedDate: "2026-11-24",
+          situation: "在韩国不动产（부동산）看单间（원룸），你想问保证金能不能调低一点、月租会怎么变。",
+          other: "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+          otherZh: "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+          answer: "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+          answerZh: "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+          alternatives: [
+            { expr: "보증금 오백만 원으로도 계약이 가능한지 집주인분께 여쭤봐 주실 수 있나요?", meaning: "能帮我问问房东，保证金 500 万韩元是否也能签约吗？" },
+            { expr: "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?", meaning: "管理费是另算的，还是包含在月租里的呢？" }
+          ],
+          note: "租房核心词：보증금（保证金）、월세（月租）、관리비（管理费）、조율하다（协商调整）。"
+        },
+        {
+          id: "en-daily-1",
+          lang: "en",
+          scene: "daily",
+          tag: "咖啡店 · 定制点单",
+          addedDate: "2026-11-24",
+          situation: "在精品咖啡店点了一杯冰美式，店员问你是否需要加糖浆或换燕麦奶。",
+          other: "Would you like any room for milk, or any sweetener in that?",
+          otherZh: "需要留一点加奶的空间，或者加点甜味剂吗？",
+          answer: "I'm good with it black, thanks. Just regular ice is fine.",
+          answerZh: "我就喝纯黑咖就好，谢谢。正常冰就行。",
+          alternatives: [
+            { expr: "No sweetener for me, just a splash of oat milk please.", meaning: "不用加甜味剂，帮我加一点点燕麦奶就好。" },
+            { expr: "Actually, could I do light ice on that?", meaning: "其实可以帮我做成少冰吗？" }
+          ],
+          note: "I'm good with it black 是母语者表示“直接喝黑咖啡不加奶糖”最自然的说法。"
+        },
+        {
+          id: "en-travel-1",
+          lang: "en",
+          scene: "travel",
+          tag: "机场值机 · 询问靠窗与行李直挂",
+          addedDate: "2026-11-24",
+          situation: "在海外机场柜台办理转机值机，你想确认托运行李是否直挂到最终目的地。",
+          other: "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+          otherZh: "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+          answer: "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+          answerZh: "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+          alternatives: [
+            { expr: "Do I need to pick up my luggage during the layover, or does it go straight through?", meaning: "中转的时候我需要取行李吗，还是直接挂过去？" },
+            { expr: "Also, is there any chance a window seat is still available?", meaning: "另外，请问现在还有靠窗的座位吗？" }
+          ],
+          note: "checked all the way through 是航空英语里“行李直挂到底”的地道表达。"
+        },
+        {
+          id: "en-fandom-1",
+          lang: "en",
+          scene: "fandom",
+          tag: "海外演唱会 · 排队换无料与小卡",
+          addedDate: "2026-11-24",
+          situation: "在海外演唱会场外排队，旁边拿着卡册的粉丝看到你包上的挂件，热情地问你本命是谁。",
+          other: "OMG I love your keychain! Who's your bias?",
+          otherZh: "天哪我超喜欢你的挂件！你的本命是谁呀？",
+          answer: "Thank you! My bias is Sangwon—I actually brought some freebies of him if you want one!",
+          answerZh: "谢谢你！我的本命是相沅——我刚好带了一些他的无料，你要不要拿一份！",
+          alternatives: [
+            { expr: "I'm a huge Sangwon stan! Are you trading photocards by any chance?", meaning: "我是相沅死忠粉！你正好在换小卡吗？" },
+            { expr: "Sangwon is my ult! Who are you looking to trade for?", meaning: "相沅是我的本命！你想换谁的卡呀？" }
+          ],
+          note: "欧美追星常用词：bias / ult（本命）、stan（粉丝/粉上）、freebies（无料周边）。"
+        },
+        {
+          id: "en-work-1",
+          lang: "en",
+          scene: "work",
+          tag: "跨国团队 · 确认排期与交付",
+          addedDate: "2026-11-24",
+          situation: "线上会议快结束时，项目负责人问你周四下班前能不能给出初版活动视觉方案。",
+          other: "Do you think we can have a first draft ready to review by Thursday EOD?",
+          otherZh: "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+          answer: "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+          answerZh: "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+          alternatives: [
+            { expr: "I can definitely get the initial concepts over to you before Thursday end of day.", meaning: "我肯定能在周四下班前把初步创意方案发给你。" },
+            { expr: "If we lock in the brief today, Thursday EOD is totally doable.", meaning: "如果今天能敲定需求简报，周四下班前完全没问题。" }
+          ],
+          note: "EOD = End of Day（当天工作结束前），用 totally doable 或 works for me 比单纯说 Yes 更显专业。"
+        }
+      ]
+    };
+
+    const SCENE_META = {
+      en: [
+        { id: 'daily', title: '日常生活', en: 'Daily Life', desc: '咖啡点单、超市结账、邻里寒暄与生活突发状况' },
+        { id: 'travel', title: '旅行探索', en: 'Travel & Transit', desc: '机场值机、酒店入住、问路点餐与退税沟通' },
+        { id: 'fandom', title: '追星现场', en: 'Concert & Fandom', desc: '场外换卡、送无料、拼车同担与周边排队' },
+        { id: 'work', title: '职场沟通', en: 'Workplace', desc: '站会同步、确认排期、婉拒需求与跨团队协作' }
+      ],
+      ko: [
+        { id: 'daily', title: '日常生活', en: '일상 생활', desc: '便利店充交通卡、Daiso 找折叠凳、打车去电视台、不动产租房' },
+        { id: 'sanok', title: '电视台预录', en: '음악방송 사녹', desc: '1차 인원체크 漏领打歌板、补盖章、整队编号、借电池与再集合' },
+        { id: 'fandom', title: '追星与换卡', en: '덕질 & 포카 교환', desc: '李相沅满额卡/打歌卡交换、对光查瑕、快闪店与生咖应援' },
+        { id: 'travel', title: '旅行探索', en: '여행 & 쇼핑', desc: 'Olive Young 退税、一人食点餐、机场免税店与问路' },
+        { id: 'work', title: '职场与兼职', en: '직장 & 알바', desc: '韩国职场汇报、兼职排班沟通、请假与商务礼貌回应' }
+      ]
+    };
+
+    let allItems = [];
+    let siteMeta = { lastUpdated: '2026-11-24', dailyAddedCount: 10 };
+    let currentLang = 'ko';
+    let currentScene = 'daily';
+    let currentList = [];
+    let currentIndex = 0;
+    let savedFilter = 'all';
+
+    async function loadScenarioData() {
+      try {
+        const res = await fetch('./scenarios.json?t=' + Date.now());
+        if (!res.ok) throw new Error('Network error');
+        const data = await res.json();
+        if (data && Array.isArray(data.items) && data.items.length > 0) {
+          allItems = data.items;
+          siteMeta.lastUpdated = data.lastUpdated || siteMeta.lastUpdated;
+          siteMeta.dailyAddedCount = data.dailyAddedCount || 10;
+        } else {
+          throw new Error('Empty items');
+        }
+      } catch (err) {
+        allItems = FALLBACK_DATA.items;
+        siteMeta.lastUpdated = FALLBACK_DATA.lastUpdated;
+        siteMeta.dailyAddedCount = FALLBACK_DATA.dailyAddedCount;
+      }
+      renderHomeStats();
+      updateSavedBadge();
+    }
+
+    function renderHomeStats() {
+      const enCount = allItems.filter(i => i.lang === 'en').length;
+      const koCount = allItems.filter(i => i.lang === 'ko').length;
+      document.getElementById('issueLabel').textContent = `ISSUE · ${siteMeta.lastUpdated}`;
+      document.getElementById('updateSummaryText').textContent =
+        `已自动同步至 ${siteMeta.lastUpdated} · 本期新增 ${siteMeta.dailyAddedCount} 组情境 · 累计 ${allItems.length} 题`;
+      document.getElementById('updateDateText').textContent = `EN ${enCount} · KO ${koCount}`;
+      document.getElementById('totalPoolStat').textContent = `总题库 ${allItems.length} 题`;
+      document.getElementById('enCountLabel').textContent = `进入训练（${enCount} 题）`;
+      document.getElementById('koCountLabel').textContent = `进入训练（${koCount} 题）`;
+    }
+
+    function switchView(viewId) {
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.getElementById(viewId).classList.add('active');
+      document.getElementById('navSavedBtn').classList.toggle('active', viewId === 'viewSaved');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function goHome() {
+      switchView('viewHome');
+    }
+
+    function selectLanguage(lang) {
+      currentLang = lang;
+      document.getElementById('pillEn').classList.toggle('active', lang === 'en');
+      document.getElementById('pillKo').classList.toggle('active', lang === 'ko');
+      document.getElementById('scenePageTitle').textContent =
+        lang === 'en' ? 'English · 选择训练场景' : '한국어 · 选择训练场景';
+      document.getElementById('scenePageSub').textContent =
+        lang === 'en'
+          ? '覆盖高频英语口语反应场景，先想再看地道表达'
+          : '已单独拆分电视台预录与李相沅换卡专题，持续日更中';
+
+      renderSceneList();
+      switchView('viewScenes');
+    }
+
+    function renderSceneList() {
+      const container = document.getElementById('sceneList');
+      const scenes = SCENE_META[currentLang] || [];
+      container.innerHTML = scenes.map(sc => {
+        const items = allItems.filter(i => i.lang === currentLang && i.scene === sc.id);
+        const hasNew = items.some(i => i.addedDate === siteMeta.lastUpdated);
+        return `
+          <div class="scene-card" onclick="startScene('${sc.id}')">
+            <div class="scene-info">
+              <h3>
+                <span>${sc.title}</span>
+                <span class="scene-en-sub">${sc.en}</span>
+                ${hasNew ? '<span class="new-pill">NEW</span>' : ''}
+              </h3>
+              <div class="scene-desc">${sc.desc}</div>
+            </div>
+            <span class="scene-badge">${items.length} 题 →</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function startScene(sceneId) {
+      currentScene = sceneId;
+      currentList = allItems.filter(i => i.lang === currentLang && i.scene === sceneId);
+      // 优先把最新日期的题排在前面方便查看
+      currentList.sort((a, b) => (b.addedDate || '').localeCompare(a.addedDate || ''));
+      currentIndex = 0;
+
+      const meta = (SCENE_META[currentLang] || []).find(s => s.id === sceneId);
+      document.getElementById('practiceSceneBadge').textContent = meta ? `${meta.title} · ${meta.en}` : '';
+      renderChallenge();
+      switchView('viewPractice');
+    }
+
+    function backToScenes() {
+      renderSceneList();
+      switchView('viewScenes');
+    }
+
+    function renderChallenge() {
+      if (!currentList.length) return;
+      const item = currentList[currentIndex];
+      const savedList = readSaved();
+      const isSaved = savedList.some(s => s.id === item.id);
+      const isToday = item.addedDate === siteMeta.lastUpdated;
+
+      document.getElementById('progressText').textContent = `第 ${currentIndex + 1} / ${currentList.length} 题`;
+      document.getElementById('challengeDateBadge').textContent = isToday ? `今日上新 · ${item.addedDate}` : (item.addedDate || '');
+      document.getElementById('progressFill').style.width = `${((currentIndex + 1) / currentList.length) * 100}%`;
+
+      const altsHtml = (item.alternatives || []).map(a => `
+        <div class="alt-item">
+          <div class="alt-expr">${escapeHtml(a.expr)}</div>
+          <div class="alt-meaning">${escapeHtml(a.meaning)}</div>
+        </div>
+      `).join('');
+
+      document.getElementById('challengeCard').innerHTML = `
+        <div class="card-top-row">
+          <div class="tag-group">
+            <span class="micro-tag">${escapeHtml(item.tag || '真实情境')}</span>
+            ${isToday ? '<span class="new-pill">NEW</span>' : ''}
+          </div>
+          <button class="bookmark-btn ${isSaved ? 'saved' : ''}" id="cardSaveBtn" onclick="toggleSaveCurrent()">
+            <span>${isSaved ? '★ 已收藏' : '☆ 收藏表达'}</span>
+          </button>
+        </div>
+
+        <div class="situation-box">
+          <span class="situation-label">情境设定 / Situation</span>
+          ${escapeHtml(item.situation)}
+        </div>
+
+        <div class="prompt-block">
+          <div class="speaker-label">对方对你说 / Prompt</div>
+          <div class="other-line">“${escapeHtml(item.other)}”</div>
+          <div class="other-zh">${escapeHtml(item.otherZh)}</div>
+        </div>
+
+        <div class="think-prompt" id="thinkBox">
+          <div class="think-hint">先别急着看答案——试着在心里或小声说出你的第一反应</div>
+          <button class="reveal-btn" onclick="revealAnswer()">我准备好了 · 查看自然表达</button>
+        </div>
+
+        <div class="answer-panel" id="answerPanel">
+          <div class="primary-answer">
+            <span class="answer-tag">最自然母语回应 / Natural Response</span>
+            <div class="native-line">${escapeHtml(item.answer)}</div>
+            <div class="native-zh">${escapeHtml(item.answerZh)}</div>
+          </div>
+
+          <div class="alt-title">其他地道替换表达 / Alternatives</div>
+          <div class="alt-list">${altsHtml}</div>
+
+          ${item.note ? `<div class="nuance-note">💡 <strong>语境贴士：</strong>${escapeHtml(item.note)}</div>` : ''}
+        </div>
+      `;
+
+      document.getElementById('prevBtn').disabled = currentIndex === 0;
+      document.getElementById('nextBtn').textContent =
+        currentIndex === currentList.length - 1 ? '完成本组 · 返回场景' : '下一题 →';
+    }
+
+    function revealAnswer() {
+      const thinkBox = document.getElementById('thinkBox');
+      const answerPanel = document.getElementById('answerPanel');
+      if (thinkBox) thinkBox.style.display = 'none';
+      if (answerPanel) answerPanel.classList.add('visible');
+    }
+
+    function prevChallenge() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderChallenge();
+      }
+    }
+
+    function nextChallenge() {
+      if (currentIndex < currentList.length - 1) {
+        currentIndex++;
+        renderChallenge();
+      } else {
+        showToast('本场景已全部练完！');
+        backToScenes();
+      }
+    }
+
+    function toggleSaveCurrent() {
+      const item = currentList[currentIndex];
+      if (!item) return;
+      let saved = readSaved();
+      const idx = saved.findIndex(s => s.id === item.id);
+      if (idx > -1) {
+        saved.splice(idx, 1);
+        showToast('已从收藏本移除');
+      } else {
+        saved.unshift({ ...item, savedAt: new Date().toISOString() });
+        showToast('已加入收藏复习本 ★');
+      }
+      writeSaved(saved);
+      const btn = document.getElementById('cardSaveBtn');
+      if (btn) {
+        const nowSaved = idx === -1;
+        btn.classList.toggle('saved', nowSaved);
+        btn.innerHTML = `<span>${nowSaved ? '★ 已收藏' : '☆ 收藏表达'}</span>`;
+      }
+    }
+
+    function updateSavedBadge() {
+      const count = readSaved().length;
+      document.getElementById('savedCountBadge').textContent = count;
+    }
+
+    function openSavedView() {
+      renderSavedList();
+      switchView('viewSaved');
+    }
+
+    function setSavedFilter(filter, el) {
+      savedFilter = filter;
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      if (el) el.classList.add('active');
+      renderSavedList();
+    }
+
+    function renderSavedList() {
+      const container = document.getElementById('savedList');
+      let list = readSaved();
+      if (savedFilter !== 'all') {
+        list = list.filter(item => item.lang === savedFilter);
+      }
+
+      if (!list.length) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <p>这里还没有收藏的表达。<br>在训练卡片右上角点击「☆ 收藏表达」，就会自动保存在这里。</p>
+            <button class="nav-saved-btn" onclick="goHome()">去挑一个场景练习 →</button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = list.map(item => `
+        <div class="saved-card">
+          <div class="saved-card-head">
+            <span class="saved-meta-tag">${item.lang === 'ko' ? '한국어' : 'English'} · ${escapeHtml(item.tag || '')}</span>
+            <button class="remove-btn" onclick="removeSavedItem('${item.id}')">取消收藏</button>
+          </div>
+          <div class="saved-situation">情境：${escapeHtml(item.situation)}</div>
+          <div class="saved-main-expr">${escapeHtml(item.answer)}</div>
+          <div class="saved-main-zh">${escapeHtml(item.answerZh)}</div>
+          ${item.alternatives && item.alternatives.length ? `
+            <div class="saved-alts">
+              <strong>替换说法：</strong>${item.alternatives.map(a => escapeHtml(a.expr)).join(' / ')}
+            </div>
+          ` : ''}
+        </div>
+      `).join('');
+    }
+
+    function removeSavedItem(id) {
+      const updated = readSaved().filter(item => item.id !== id);
+      writeSaved(updated);
+      renderSavedList();
+      showToast('已取消收藏');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    loadScenarioData();
+  </script>
+</body>
+</html>
