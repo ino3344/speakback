@@ -1,176 +1,4402 @@
-{
-  "lastUpdated": "2026-11-24",
-  "dailyAddedCount": 10,
-  "items": [
-    {
-      "id": "ko-sanok-1",
-      "lang": "ko",
-      "scene": "sanok",
-      "tag": "1차 인원체크 · 漏领打歌板",
-      "addedDate": "2026-11-24",
-      "situation": "电视台预录第一轮人员确认（1차 인원체크）时，饭经核对完名单却忘了给你发当天的打歌板（공방판）。",
-      "other": "네, 확인되셨습니다. 다음 분 오실게요~",
-      "otherZh": "好的，确认好了。下一位请过来～",
-      "answer": "저기요! 방금 인원체크 했는데 제가 아직 공방판을 못 받아서요, 혹시 하나 주실 수 있나요?",
-      "answerZh": "不好意思！刚刚做完人员确认，但我还没拿到打歌板，请问能给我一张吗？",
-      "alternatives": [
-        { "expr": "매니저님, 저 방금 체크했는데 공방판 누락된 것 같아요!", "meaning": "经纪人（饭经），我刚刚核对过了，好像漏发我打歌板了！" },
-        { "expr": "혹시 공방판은 여기서 바로 받는 건가요? 제가 아직 못 받아서요.", "meaning": "请问打歌板是在这里直接领吗？我刚刚还没领到。" }
-      ],
-      "note": "打歌板统称 공방판（公开放送板），负责点名的工作人员一般称 매니저님 或 스태프님。"
-    },
-    {
-      "id": "ko-fandom-1",
-      "lang": "ko",
-      "scene": "fandom",
-      "tag": "快闪满额卡 · 现场求换李相沅",
-      "addedDate": "2026-11-24",
-      "situation": "快闪店抽完满额卡（럭키드로우），旁边同样在拆卡的粉丝问你本命是谁、想换谁的卡。",
-      "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
-      "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
-      "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
-      "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
-      "alternatives": [
-        { "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?", "meaning": "我在求相沅的卡！请问你抽到相沅了吗？" },
-        { "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?", "meaning": "我在找李相沅，请问你在求哪位成员呀？" }
-      ],
-      "note": "韩圈换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
-    },
-    {
-      "id": "ko-daily-1",
-      "lang": "ko",
-      "scene": "daily",
-      "tag": "便利店 · 充值交通卡",
-      "addedDate": "2026-11-24",
-      "situation": "走进首尔便利店，把 T-money 交通卡递给店员想充值 1 万韩元现金。",
-      "other": "어서 오세요. 도와드릴까요?",
-      "otherZh": "欢迎光临，需要帮您什么？",
-      "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
-      "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
-      "alternatives": [
-        { "expr": "티머니 만 원 충전 부탁드립니다.", "meaning": "麻烦帮我给 T-money 充 1 万韩元。" },
-        { "expr": "이 카드에 만 원만 넣어 주세요.", "meaning": "请帮我往这张卡里充 1 万韩元。" }
-      ],
-      "note": "韩国便利店交通卡充值（충전）通常只收现金（현금）。"
-    },
-    {
-      "id": "ko-daily-2",
-      "lang": "ko",
-      "scene": "daily",
-      "tag": "Daiso 大创 · 找高款折叠凳",
-      "addedDate": "2026-11-24",
-      "situation": "为了去电视台夜排，你在大创（다이소）看到一款太矮的折叠凳，想问店员有没有更高一点的款式。",
-      "other": "찾으시는 물건 있으세요?",
-      "otherZh": "请问有在找什么商品吗？",
-      "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
-      "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
-      "alternatives": [
-        { "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?", "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？" },
-        { "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?", "meaning": "有比这款椅子腿再长一点的型号吗？" }
-      ],
-      "note": "折叠凳在韩国大创叫 접이식 의자 或 간이의자。"
-    },
-    {
-      "id": "ko-daily-3",
-      "lang": "ko",
-      "scene": "daily",
-      "tag": "打车去电视台 · 司机搭话",
-      "addedDate": "2026-11-24",
-      "situation": "大清早打车去上岩洞电视台，出租车大叔看你背着大包小包，好奇问你这么早去干嘛。",
-      "other": "아침 일찍부터 방송국에는 무슨 일로 가세요?",
-      "otherZh": "一大早去电视台是有什么事呀？",
-      "answer": "제가 좋아하는 아이돌 음악방송 사녹 보러 가는 길이에요!",
-      "answerZh": "我正要去电视台看我喜欢的爱豆打歌预录呢！",
-      "alternatives": [
-        { "expr": "아이돌 공개방송 방청 당첨돼서 아침부터 가고 있어요.", "meaning": "抽中了爱豆公开放送的现场观众，一早就赶过去了。" },
-        { "expr": "좋아하는 가수 컴백 무대 응원하러 방송국 가요!", "meaning": "去电视台给喜欢的歌手回归舞台应援！" }
-      ],
-      "note": "사녹（사전녹화 预录）或 공방（공개방송 公开放送）都是追星人高频词。"
-    },
-    {
-      "id": "ko-daily-4",
-      "lang": "ko",
-      "scene": "daily",
-      "tag": "不动产 · 咨询保证金与月租",
-      "addedDate": "2026-11-24",
-      "situation": "在韩国不动产（부동산）看单间（원룸），你想问保证金能不能调低一点、月租会怎么变。",
-      "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
-      "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
-      "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
-      "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
-      "alternatives": [
-        { "expr": "보증금 오백만 원으로도 계약이 가능한지 집주인분께 여쭤봐 주실 수 있나요?", "meaning": "能帮我问问房东，保证金 500 万韩元是否也能签约吗？" },
-        { "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?", "meaning": "管理费是另算的，还是包含在月租里的呢？" }
-      ],
-      "note": "租房核心词：보증금（保证金）、월세（月租）、관리비（管理费）、조율하다（协商调整）。"
-    },
-    {
-      "id": "en-daily-1",
-      "lang": "en",
-      "scene": "daily",
-      "tag": "咖啡店 · 定制点单",
-      "addedDate": "2026-11-24",
-      "situation": "在精品咖啡店点了一杯冰美式，店员问你是否需要加糖浆或换燕麦奶。",
-      "other": "Would you like any room for milk, or any sweetener in that?",
-      "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
-      "answer": "I'm good with it black, thanks. Just regular ice is fine.",
-      "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
-      "alternatives": [
-        { "expr": "No sweetener for me, just a splash of oat milk please.", "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。" },
-        { "expr": "Actually, could I do light ice on that?", "meaning": "其实可以帮我做成少冰吗？" }
-      ],
-      "note": "I'm good with it black 是母语者表示“直接喝黑咖啡不加奶糖”最自然的说法。"
-    },
-    {
-      "id": "en-travel-1",
-      "lang": "en",
-      "scene": "travel",
-      "tag": "机场值机 · 询问靠窗与行李直挂",
-      "addedDate": "2026-11-24",
-      "situation": "在海外机场柜台办理转机值机，你想确认托运行李是否直挂到最终目的地。",
-      "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
-      "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
-      "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
-      "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
-      "alternatives": [
-        { "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?", "meaning": "中转的时候我需要取行李吗，还是直接挂过去？" },
-        { "expr": "Also, is there any chance a window seat is still available?", "meaning": "另外，请问现在还有靠窗的座位吗？" }
-      ],
-      "note": "checked all the way through 是航空英语里“行李直挂到底”的地道表达。"
-    },
-    {
-      "id": "en-fandom-1",
-      "lang": "en",
-      "scene": "fandom",
-      "tag": "海外演唱会 · 排队换无料与小卡",
-      "addedDate": "2026-11-24",
-      "situation": "在海外演唱会场外排队，旁边拿着卡册的粉丝看到你包上的挂件，热情地问你本命是谁。",
-      "other": "OMG I love your keychain! Who's your bias?",
-      "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
-      "answer": "Thank you! My bias is Sangwon—I actually brought some freebies of him if you want one!",
-      "answerZh": "谢谢你！我的本命是相沅——我刚好带了一些他的无料，你要不要拿一份！",
-      "alternatives": [
-        { "expr": "I'm a huge Sangwon stan! Are you trading photocards by any chance?", "meaning": "我是相沅死忠粉！你正好在换小卡吗？" },
-        { "expr": "Sangwon is my ult! Who are you looking to trade for?", "meaning": "相沅是我的本命！你想换谁的卡呀？" }
-      ],
-      "note": "欧美追星常用词：bias / ult（本命）、stan（粉丝/粉上）、freebies（无料周边）。"
-    },
-    {
-      "id": "en-work-1",
-      "lang": "en",
-      "scene": "work",
-      "tag": "跨国团队 · 确认排期与交付",
-      "addedDate": "2026-11-24",
-      "situation": "线上会议快结束时，项目负责人问你周四下班前能不能给出初版活动视觉方案。",
-      "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
-      "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
-      "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
-      "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
-      "alternatives": [
-        { "expr": "I can definitely get the initial concepts over to you before Thursday end of day.", "meaning": "我肯定能在周四下班前把初步创意方案发给你。" },
-        { "expr": "If we lock in the brief today, Thursday EOD is totally doable.", "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。" }
-      ],
-      "note": "EOD = End of Day（当天工作结束前），用 totally doable 或 works for me 比单纯说 Yes 更显专业。"
-    }
-  ]
-}
+[
+  {
+    "id": "auto-pool-11",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 1",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 1 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-12",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 1",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 1 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-13",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 1",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 1 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-14",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 1",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 1 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-15",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 1",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 1 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-16",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 1",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 1 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-17",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 1",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 1 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-18",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 2",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 2 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-19",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 2",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 2 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-20",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 2",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 2 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-21",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 2",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 2 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-22",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 2",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 2 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-23",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 2",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 2 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-24",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 2",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 2 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-25",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 2",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 2 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-26",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 2",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 2 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-27",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 2",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 2 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-28",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 2",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 2 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-29",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 2",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 2 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-30",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 2",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 2 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-31",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 2",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 2 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-32",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 2",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 2 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-33",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 2",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 2 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-34",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 2",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 2 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-35",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 3",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 3 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-36",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 3",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 3 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-37",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 3",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 3 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-38",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 3",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 3 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-39",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 3",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 3 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-40",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 3",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 3 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-41",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 3",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 3 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-42",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 3",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 3 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-43",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 3",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 3 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-44",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 3",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 3 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-45",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 3",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 3 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-46",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 3",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 3 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-47",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 3",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 3 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-48",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 3",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 3 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-49",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 3",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 3 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-50",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 3",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 3 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-51",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 3",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 3 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-52",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 4",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 4 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-53",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 4",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 4 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-54",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 4",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 4 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-55",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 4",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 4 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-56",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 4",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 4 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-57",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 4",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 4 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-58",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 4",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 4 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-59",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 4",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 4 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-60",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 4",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 4 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-61",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 4",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 4 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-62",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 4",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 4 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-63",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 4",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 4 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-64",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 4",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 4 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-65",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 4",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 4 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-66",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 4",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 4 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-67",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 4",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 4 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-68",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 4",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 4 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-69",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 5",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 5 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-70",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 5",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 5 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-71",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 5",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 5 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-72",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 5",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 5 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-73",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 5",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 5 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-74",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 5",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 5 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-75",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 5",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 5 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-76",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 5",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 5 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-77",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 5",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 5 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-78",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 5",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 5 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-79",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 5",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 5 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-80",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 5",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 5 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-81",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 5",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 5 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-82",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 5",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 5 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-83",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 5",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 5 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-84",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 5",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 5 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-85",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 5",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 5 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-86",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 6",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 6 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-87",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 6",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 6 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-88",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 6",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 6 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-89",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 6",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 6 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-90",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 6",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 6 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-91",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 6",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 6 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-92",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 6",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 6 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-93",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 6",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 6 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-94",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 6",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 6 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-95",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 6",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 6 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-96",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 6",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 6 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-97",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 6",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 6 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-98",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 6",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 6 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-99",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 6",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 6 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-100",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 6",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 6 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-101",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 6",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 6 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-102",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 6",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 6 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-103",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 7",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 7 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-104",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 7",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 7 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-105",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 7",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 7 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-106",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 7",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 7 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-107",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 7",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 7 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-108",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 7",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 7 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-109",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 7",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 7 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-110",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 7",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 7 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-111",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 7",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 7 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-112",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 7",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 7 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-113",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 7",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 7 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-114",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 7",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 7 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-115",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 7",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 7 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-116",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 7",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 7 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-117",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 7",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 7 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-118",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 7",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 7 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-119",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 7",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 7 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-120",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 8",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 8 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-121",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 8",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 8 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-122",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 8",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 8 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-123",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 8",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 8 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-124",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 8",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 8 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-125",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 8",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 8 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-126",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 8",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 8 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-127",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 8",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 8 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-128",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 8",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 8 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-129",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 8",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 8 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-130",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 8",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 8 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-131",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 8",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 8 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-132",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 8",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 8 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-133",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 8",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 8 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-134",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 8",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 8 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-135",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 8",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 8 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-136",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 8",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 8 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-137",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 9",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 9 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-138",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 9",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 9 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-139",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 9",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 9 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-140",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 9",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 9 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-141",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 9",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 9 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-142",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 9",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 9 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-143",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 9",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 9 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-144",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 9",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 9 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-145",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 9",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 9 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-146",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 9",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 9 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-147",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 9",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 9 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-148",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 9",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 9 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-149",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 9",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 9 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-150",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 9",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 9 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-151",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 9",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 9 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-152",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 9",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 9 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-153",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 9",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 9 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-154",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 10",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 10 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-155",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 10",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 10 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-156",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 10",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 10 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-157",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 10",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 10 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-158",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 10",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 10 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-159",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 10",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 10 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-160",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 10",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 10 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-161",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 10",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 10 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-162",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 10",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 10 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-163",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 10",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 10 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-164",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 10",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 10 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-165",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 10",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 10 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-166",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 10",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 10 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-167",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 10",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 10 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-168",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 10",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 10 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-169",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 10",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 10 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-170",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 10",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 10 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-171",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 11",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 11 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-172",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 11",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 11 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-173",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 11",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 11 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-174",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 11",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 11 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-175",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 11",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 11 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-176",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 11",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 11 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-177",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 11",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 11 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-178",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 11",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 11 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-179",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 11",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 11 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-180",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 11",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 11 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-181",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 11",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 11 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-182",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 11",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 11 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-183",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 11",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 11 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-184",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 11",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 11 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-185",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 11",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 11 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-186",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 11",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 11 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-187",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 11",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 11 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-188",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 12",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 12 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-189",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 12",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 12 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-190",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 12",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 12 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-191",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 12",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 12 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-192",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 12",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 12 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-193",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 12",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 12 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  },
+  {
+    "id": "auto-pool-194",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场对光 · 确认卡面状态 · 变体 12",
+    "situation": "谈好交换李相沅小卡后，交换前互相在光下确认卡面有没有划痕或压痕。（第 12 组实战反应练习）",
+    "other": "여기 상원이 포카요! 한 번 확인해 보세요.",
+    "otherZh": "给，这是相沅的小卡！你检查一下吧。",
+    "answer": "감사합니다! 잠깐 빛 비춤만 확인해 볼게요. 제 것도 확인해 주세요!",
+    "answerZh": "谢谢！我稍微对着光检查一下卡面哦。你也检查一下我这张！",
+    "alternatives": [
+      {
+        "expr": "빛 비췄을 때 큰 하자 없으면 바로 교환할까요?",
+        "meaning": "对光看如果没有明显瑕疵的话，我们直接换吧？"
+      },
+      {
+        "expr": "깔끔하네요! 교환해 주셔서 정말 감사합니다!",
+        "meaning": "卡面很完美！非常感谢跟我交换！"
+      }
+    ],
+    "note": "빛 비춤（对光看）和 하자（瑕疵）是换卡常用词。"
+  },
+  {
+    "id": "auto-pool-195",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "快闪周边 · 询问库存与补货 · 变体 12",
+    "situation": "快闪店里想要的李相沅周边货架空了，向店员确认是否还有库存。（第 12 组实战反应练习）",
+    "other": "필요하신 상품 있으시면 말씀해 주세요.",
+    "otherZh": "有需要的商品请告诉我。",
+    "answer": "저기요, 이상원 굿즈 진열대에는 품절인데 혹시 재고 더 남아 있나요?",
+    "answerZh": "不好意思，李相沅的周边货架上卖完了，请问仓库里还有库存吗？",
+    "alternatives": [
+      {
+        "expr": "상원이 버전 상품은 오늘 물량 다 빠진 건가요?",
+        "meaning": "相沅版本的商品今天的货已经全部卖完了吗？"
+      },
+      {
+        "expr": "혹시 이거 내일 오전에 재입고 예정이 있을까요?",
+        "meaning": "请问这款明天上午有补货计划吗？"
+      }
+    ],
+    "note": "품절（售罄）、재고（库存）、재입고（补货）。"
+  },
+  {
+    "id": "auto-pool-196",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "线下应援 · 互送无料周边 · 变体 12",
+    "situation": "排队时同担送了你一份自制无料，你想道谢并回赠小零食。（第 12 组实战反应练习）",
+    "other": "상원이 팬이시죠? 이거 제가 만든 나눔인데 하나 받으세요!",
+    "otherZh": "你是相沅粉丝对吧？这是我做的无料，拿一份吧！",
+    "answer": "헐, 너무 예뻐요! 진짜 감사합니다! 저도 작은 간식 챙겨왔는데 이거 드세요!",
+    "answerZh": "天哪，太好看了吧！真的非常感谢！我也带了点小零食，这个给你吃！",
+    "alternatives": [
+      {
+        "expr": "직접 만드신 거예요? 퀄리티 대박이다! 소중히 간직할게요!",
+        "meaning": "是你亲手做的吗？质感绝了！我会好好珍藏的！"
+      },
+      {
+        "expr": "나눔 정말 감사합니다! 오늘 같이 열심히 응원해요!",
+        "meaning": "非常感谢分享无料！今天一起努力应援吧！"
+      }
+    ],
+    "note": "粉丝自制免费发放的应援物统称 나눔。"
+  },
+  {
+    "id": "auto-pool-197",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "便利店 · 充值交通卡 · 变体 12",
+    "situation": "在首尔便利店用现金给交通卡充值。（第 12 组实战反应练习）",
+    "other": "어서 오세요. 도와드릴까요?",
+    "otherZh": "欢迎光临，需要帮您什么？",
+    "answer": "네, 교통카드 만 원만 충전해 주세요. 여기 현금이요.",
+    "answerZh": "好的，请帮我给交通卡充 1 万韩元，这是现金。",
+    "alternatives": [
+      {
+        "expr": "티머니 만 원 충전 부탁드립니다.",
+        "meaning": "麻烦帮我给 T-money 充 1 万韩元。"
+      },
+      {
+        "expr": "이 카드에 만 원만 넣어 주세요.",
+        "meaning": "请帮我往这张卡里充 1 万韩元。"
+      }
+    ],
+    "note": "交通卡充值一般用现金（현금），说 충전해 주세요 最自然。"
+  },
+  {
+    "id": "auto-pool-198",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "Daiso 大创 · 找折叠凳 · 变体 12",
+    "situation": "在大创找适合排队坐的折叠凳并确认高度。（第 12 组实战反应练习）",
+    "other": "찾으시는 물건 있으세요?",
+    "otherZh": "请问有在找什么商品吗？",
+    "answer": "네, 접이식 의자 찾고 있는데요. 이거보다 조금 더 높은 사이즈도 있나요?",
+    "answerZh": "是的，我在找折叠凳。请问有比这款稍微再高一点的尺寸吗？",
+    "alternatives": [
+      {
+        "expr": "캠핑용 접이식 의자 중에 높이가 좀 더 높은 건 어디 있나요?",
+        "meaning": "露营用的折叠凳里，高度再高一点的放在哪里呀？"
+      },
+      {
+        "expr": "이 의자보다 다리가 좀 더 긴 모델도 들어와 있나요?",
+        "meaning": "有比这款椅子腿再长一点的型号吗？"
+      }
+    ],
+    "note": "折叠凳常说 접이식 의자。"
+  },
+  {
+    "id": "auto-pool-199",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "不动产 · 确认租房条件 · 变体 12",
+    "situation": "在不动产看房时确认保证金、月租与管理费细节。（第 12 组实战反应练习）",
+    "other": "이 방은 보증금 천만 원에 월세 육십만 원이에요.",
+    "otherZh": "这间房是保证金 1000 万韩元，月租 60 万韩元。",
+    "answer": "혹시 보증금을 조금 낮추고 월세를 올리는 식으로 조율이 가능할까요?",
+    "answerZh": "请问可以稍微调低一点保证金、相应提高月租这样协商吗？",
+    "alternatives": [
+      {
+        "expr": "관리비는 별도인가요, 아니면 월세에 포함되어 있나요?",
+        "meaning": "管理费是另算的，还是包含在月租里的呢？"
+      },
+      {
+        "expr": "전입신고도 정상적으로 가능한 집인가요?",
+        "meaning": "是可以正常办理迁入申报的房子吗？"
+      }
+    ],
+    "note": "보증금（保证金）、월세（月租）、관리비（管理费）。"
+  },
+  {
+    "id": "auto-pool-200",
+    "lang": "ko",
+    "scene": "daily",
+    "tag": "外卖电话 · 放门口不按铃 · 变体 12",
+    "situation": "骑手打来电话说到了楼下，请他直接放门口。（第 12 组实战反应练习）",
+    "other": "네, 배달 도착했는데 공동현관 비밀번호가 어떻게 되나요?",
+    "otherZh": "你好，外卖到了，请问单元门密码是多少？",
+    "answer": "벨 누르지 마시고 문 앞에 놓고 사진만 찍어주시면 감사하겠습니다!",
+    "answerZh": "请不要按门铃，放门口拍张照给我就好，非常感谢！",
+    "alternatives": [
+      {
+        "expr": "문 앞에 두고 가주세요, 감사합니다!",
+        "meaning": "请帮我放在门口，谢谢！"
+      },
+      {
+        "expr": "지금 바로 문 열어서 받을게요, 잠시만요!",
+        "meaning": "我现在马上开门拿，稍等一下！"
+      }
+    ],
+    "note": "문 앞에 두고 가다 是点外卖最常用的表达。"
+  },
+  {
+    "id": "auto-pool-201",
+    "lang": "en",
+    "scene": "daily",
+    "tag": "咖啡店 · 定制饮品口味 · 变体 12",
+    "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 12 组实战反应练习）",
+    "other": "Would you like any room for milk, or any sweetener in that?",
+    "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+    "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+    "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+    "alternatives": [
+      {
+        "expr": "No sweetener for me, just a splash of oat milk please.",
+        "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+      },
+      {
+        "expr": "Actually, could I do light ice on that?",
+        "meaning": "其实可以帮我做成少冰吗？"
+      }
+    ],
+    "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。"
+  },
+  {
+    "id": "auto-pool-202",
+    "lang": "en",
+    "scene": "travel",
+    "tag": "机场值机 · 确认行李与座位 · 变体 12",
+    "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 12 组实战反应练习）",
+    "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+    "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+    "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+    "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+    "alternatives": [
+      {
+        "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+        "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+      },
+      {
+        "expr": "Also, is there any chance a window seat is still available?",
+        "meaning": "另外，请问现在还有靠窗的座位吗？"
+      }
+    ],
+    "note": "checked all the way through 表示行李直挂到底。"
+  },
+  {
+    "id": "auto-pool-203",
+    "lang": "en",
+    "scene": "fandom",
+    "tag": "海外场外 · 聊本命与换卡 · 变体 12",
+    "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 12 组实战反应练习）",
+    "other": "OMG I love your keychain! Who's your bias?",
+    "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+    "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+    "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+    "alternatives": [
+      {
+        "expr": "I brought some freebies of Sangwon if you want one!",
+        "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+      },
+      {
+        "expr": "Sangwon is my ult! Who are you looking to trade for?",
+        "meaning": "相沅是我的本命！你想换谁的卡呀？"
+      }
+    ],
+    "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。"
+  },
+  {
+    "id": "auto-pool-204",
+    "lang": "en",
+    "scene": "work",
+    "tag": "团队沟通 · 确认排期与交付 · 变体 12",
+    "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 12 组实战反应练习）",
+    "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+    "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+    "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+    "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+    "alternatives": [
+      {
+        "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+        "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+      },
+      {
+        "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+        "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+      }
+    ],
+    "note": "EOD = End of Day，works for me 与 totally doable 都很自然。"
+  },
+  {
+    "id": "auto-pool-205",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "1차 인원체크 · 补盖出席印章 · 变体 13",
+    "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 13 组实战反应练习）",
+    "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+    "otherZh": "确认完毕了，请准时回来再集合。",
+    "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+    "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+    "alternatives": [
+      {
+        "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+        "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+      },
+      {
+        "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+        "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+      }
+    ],
+    "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。"
+  },
+  {
+    "id": "auto-pool-206",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "进棚前 · 向同担借 7 号电池 · 变体 13",
+    "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 13 组实战反应练习）",
+    "other": "어, 응원봉 불이 약해졌네요?",
+    "otherZh": "诶，你的应援棒灯光变弱了呢？",
+    "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+    "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+    "alternatives": [
+      {
+        "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+        "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+      },
+      {
+        "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+        "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+      }
+    ],
+    "note": "韩国说 7 号电池直接说 AAA 건전지。"
+  },
+  {
+    "id": "auto-pool-207",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "中间外出 · 询问再集合时间 · 变体 13",
+    "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 13 组实战反应练习）",
+    "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+    "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+    "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+    "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+    "alternatives": [
+      {
+        "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+        "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+      },
+      {
+        "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+        "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+      }
+    ],
+    "note": "预录中间重新集合叫 재집합。"
+  },
+  {
+    "id": "auto-pool-208",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "整队核对 · 询问前后号码 · 变体 13",
+    "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 13 组实战反应练习）",
+    "other": "네, 여기 뒷번호 줄이에요.",
+    "otherZh": "嗯，这里是后面的号码队伍。",
+    "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+    "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+    "alternatives": [
+      {
+        "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+        "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+      },
+      {
+        "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+        "meaning": "我是这个号段的，站在这边对吗？"
+      }
+    ],
+    "note": "整队时习惯互相问 몇 번이세요（你是几号）。"
+  },
+  {
+    "id": "auto-pool-209",
+    "lang": "ko",
+    "scene": "sanok",
+    "tag": "本放候补 · 询问候补名额 · 变体 13",
+    "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 13 组实战反应练习）",
+    "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+    "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+    "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+    "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+    "alternatives": [
+      {
+        "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+        "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+      },
+      {
+        "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+        "meaning": "我想领候补号，请问排哪一队就可以？"
+      }
+    ],
+    "note": "直播候补名额通常叫 예비 번호。"
+  },
+  {
+    "id": "auto-pool-210",
+    "lang": "ko",
+    "scene": "fandom",
+    "tag": "现场换卡 · 寻找李相沅小卡 · 变体 13",
+    "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 13 组实战反应练习）",
+    "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+    "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+    "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+    "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+    "alternatives": [
+      {
+        "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+        "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+      },
+      {
+        "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+        "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+      }
+    ],
+    "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。"
+  }
+]
