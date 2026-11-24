@@ -1,0 +1,76 @@
+name: Daily SpeakBack Update
+
+on:
+  schedule:
+    # 每天 UTC 00:00（即北京时间每天早上 08:00）自动运行一次
+    - cron: '0 0 * * *'
+  # 允许你在网页 Actions 页面随时手动点击测试运行
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-scenarios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pull 10 new scenarios from pool.json
+        run: |
+          node -e '
+            const fs = require("fs");
+
+            // 计算北京时间当前日期 YYYY-MM-DD
+            const now = new Date(Date.now() + 8 * 3600 * 1000);
+            const today = now.toISOString().slice(0, 10);
+
+            const scenariosData = JSON.parse(fs.readFileSync("scenarios.json", "utf8"));
+            let pool = JSON.parse(fs.readFileSync("pool.json", "utf8"));
+
+            if (!Array.isArray(pool) || pool.length === 0) {
+              console.log("pool.json is empty, skipping update.");
+              process.exit(0);
+            }
+
+            const batchSize = Math.min(10, pool.length);
+            const selected = pool.slice(0, batchSize).map((item, idx) => ({
+              ...item,
+              id: item.id || `daily-${today}-${idx + 1}`,
+              addedDate: today
+            }));
+
+            const remaining = pool.slice(batchSize);
+
+            // 去重并把今天新增的 10 条放到最前面
+            const existingIds = new Set(selected.map(i => i.id));
+            const oldItems = (scenariosData.items || []).filter(i => !existingIds.has(i.id));
+
+            const updatedScenarios = {
+              lastUpdated: today,
+              dailyAddedCount: selected.length,
+              items: [...selected, ...oldItems]
+            };
+
+            fs.writeFileSync("scenarios.json", JSON.stringify(updatedScenarios, null, 2) + "\n", "utf8");
+            fs.writeFileSync("pool.json", JSON.stringify(remaining, null, 2) + "\n", "utf8");
+            console.log(`Successfully added ${selected.length} scenarios for ${today}. Remaining in pool: ${remaining.length}`);
+          '
+
+      - name: Commit and push updated scenarios
+        run: |
+          git config user.name "SpeakBack Daily Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add scenarios.json pool.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: daily update 10 new speaking scenarios"
+            git push
+          fi
