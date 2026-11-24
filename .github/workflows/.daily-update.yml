@@ -1,0 +1,64 @@
+name: Daily SpeakBack Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-scenarios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pull 10 new scenarios from pool.json
+        run: |
+          node -e '
+          const fs = require("fs");
+          const now = new Date(Date.now() + 8 * 3600 * 1000);
+          const today = now.toISOString().slice(0, 10);
+          const scenariosData = JSON.parse(fs.readFileSync("scenarios.json", "utf8"));
+          let pool = JSON.parse(fs.readFileSync("pool.json", "utf8"));
+          if (!Array.isArray(pool) || pool.length === 0) {
+            console.log("pool.json is empty");
+            process.exit(0);
+          }
+          const batchSize = Math.min(10, pool.length);
+          const selected = pool.slice(0, batchSize).map((item, idx) => ({
+            ...item,
+            id: item.id || `daily-${today}-${idx + 1}`,
+            addedDate: today
+          }));
+          const remaining = pool.slice(batchSize);
+          const existingIds = new Set(selected.map(i => i.id));
+          const oldItems = (scenariosData.items || []).filter(i => !existingIds.has(i.id));
+          const updated = {
+            lastUpdated: today,
+            dailyAddedCount: selected.length,
+            items: [...selected, ...oldItems]
+          };
+          fs.writeFileSync("scenarios.json", JSON.stringify(updated, null, 2) + "\n", "utf8");
+          fs.writeFileSync("pool.json", JSON.stringify(remaining, null, 2) + "\n", "utf8");
+          console.log("Added:", selected.length, "Remaining:", remaining.length);
+          '
+
+      - name: Commit and push updated scenarios
+        run: |
+          git config user.name "SpeakBack Daily Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add scenarios.json pool.json
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: daily update 10 new speaking scenarios"
+            git push
+          fi
