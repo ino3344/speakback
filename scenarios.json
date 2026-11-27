@@ -1,7 +1,237 @@
 {
-  "lastUpdated": "2026-11-26",
+  "lastUpdated": "2026-11-27",
   "dailyAddedCount": 10,
   "items": [
+    {
+      "id": "auto-pool-31",
+      "lang": "en",
+      "scene": "daily",
+      "tag": "咖啡店 · 定制饮品口味 · 变体 2",
+      "situation": "在咖啡店点单时确认甜度、冰量或奶的替换。（第 2 组实战反应练习）",
+      "other": "Would you like any room for milk, or any sweetener in that?",
+      "otherZh": "需要留一点加奶的空间，或者加点甜味剂吗？",
+      "answer": "I'm good with it black, thanks. Just regular ice is fine.",
+      "answerZh": "我就喝纯黑咖就好，谢谢。正常冰就行。",
+      "alternatives": [
+        {
+          "expr": "No sweetener for me, just a splash of oat milk please.",
+          "meaning": "不用加甜味剂，帮我加一点点燕麦奶就好。"
+        },
+        {
+          "expr": "Actually, could I do light ice on that?",
+          "meaning": "其实可以帮我做成少冰吗？"
+        }
+      ],
+      "note": "I'm good with it black 表示直接喝黑咖啡不加奶糖。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-32",
+      "lang": "en",
+      "scene": "travel",
+      "tag": "机场值机 · 确认行李与座位 · 变体 2",
+      "situation": "办理值机时确认托运行李是否直挂并询问靠窗座位。（第 2 组实战反应练习）",
+      "other": "Here's your boarding pass. Gate B12, boarding starts at 4:20.",
+      "otherZh": "这是您的登机牌。B12 登机口，4 点 20 开始登机。",
+      "answer": "Thanks! Just to double check, is my bag checked all the way through to my final destination?",
+      "answerZh": "谢谢！再确认一下，我的行李是直接托运到最终目的地的吗？",
+      "alternatives": [
+        {
+          "expr": "Do I need to pick up my luggage during the layover, or does it go straight through?",
+          "meaning": "中转的时候我需要取行李吗，还是直接挂过去？"
+        },
+        {
+          "expr": "Also, is there any chance a window seat is still available?",
+          "meaning": "另外，请问现在还有靠窗的座位吗？"
+        }
+      ],
+      "note": "checked all the way through 表示行李直挂到底。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-33",
+      "lang": "en",
+      "scene": "fandom",
+      "tag": "海外场外 · 聊本命与换卡 · 变体 2",
+      "situation": "在演唱会场外排队时与同担聊本命和换卡。（第 2 组实战反应练习）",
+      "other": "OMG I love your keychain! Who's your bias?",
+      "otherZh": "天哪我超喜欢你的挂件！你的本命是谁呀？",
+      "answer": "Thank you! My bias is Sangwon—are you trading photocards by any chance?",
+      "answerZh": "谢谢你！我的本命是相沅——你正好在换小卡吗？",
+      "alternatives": [
+        {
+          "expr": "I brought some freebies of Sangwon if you want one!",
+          "meaning": "我刚好带了一些相沅的无料，你要不要拿一份！"
+        },
+        {
+          "expr": "Sangwon is my ult! Who are you looking to trade for?",
+          "meaning": "相沅是我的本命！你想换谁的卡呀？"
+        }
+      ],
+      "note": "bias / ult（本命）、freebies（无料）、trading photocards（换卡）。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-34",
+      "lang": "en",
+      "scene": "work",
+      "tag": "团队沟通 · 确认排期与交付 · 变体 2",
+      "situation": "会议中与团队确认初稿交付时间与跟进进度。（第 2 组实战反应练习）",
+      "other": "Do you think we can have a first draft ready to review by Thursday EOD?",
+      "otherZh": "你觉得我们周四下班前能准备好初稿拿来评审吗？",
+      "answer": "Thursday afternoon works for me. I'll share a rough deck by 4 PM so you have time to leave feedback.",
+      "answerZh": "周四下午没问题。我会在 4 点前把初版提案发出来，方便你们留出时间提修改意见。",
+      "alternatives": [
+        {
+          "expr": "Just wanted to quickly bump this—do we have an ETA on the deck?",
+          "meaning": "想快速跟进一下——这份提案大概什么时候能好？"
+        },
+        {
+          "expr": "If we lock in the brief today, Thursday EOD is totally doable.",
+          "meaning": "如果今天能敲定需求简报，周四下班前完全没问题。"
+        }
+      ],
+      "note": "EOD = End of Day，works for me 与 totally doable 都很自然。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-35",
+      "lang": "ko",
+      "scene": "sanok",
+      "tag": "1차 인원체크 · 补盖出席印章 · 变体 3",
+      "situation": "打歌预录第一轮点名后，发现饭经忘了在你的打歌板背面盖今天出席章。（第 3 组实战反应练习）",
+      "other": "확인 완료됐습니다. 재집합 시간 맞춰서 오세요.",
+      "otherZh": "确认完毕了，请准时回来再集合。",
+      "answer": "감사합니다! 혹시 제 공방판에 오늘 출석 도장도 찍어주실 수 있나요?",
+      "answerZh": "谢谢！请问可以顺便在我的打歌板上盖一下今天的出席章吗？",
+      "alternatives": [
+        {
+          "expr": "저기요, 공방판에 오늘 날짜 스티커 아직 안 붙여서요!",
+          "meaning": "不好意思，我的打歌板上还没贴今天的日期贴纸呢！"
+        },
+        {
+          "expr": "죄송한데 출석 체크 도장 한 번만 확인해 주실 수 있을까요?",
+          "meaning": "不好意思，能帮我确认一下出席确认章盖了没吗？"
+        }
+      ],
+      "note": "打歌板印章与贴纸关系到后续末放与签售资格，领完当场确认。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-36",
+      "lang": "ko",
+      "scene": "sanok",
+      "tag": "进棚前 · 向同担借 7 号电池 · 变体 3",
+      "situation": "准备进录影棚前打开应援棒发现没电了，向旁边排队的同担借电池。（第 3 组实战反应练习）",
+      "other": "어, 응원봉 불이 약해졌네요?",
+      "otherZh": "诶，你的应援棒灯光变弱了呢？",
+      "answer": "맞아요! 혹시 AAA 건전지 여분 있으신 분 계실까요? 편의점 갔다 올 시간이 없어서요!",
+      "answerZh": "对啊！请问有谁有多余的 7 号电池吗？我来不及去便利店买了！",
+      "alternatives": [
+        {
+          "expr": "죄송한데 건전지 세 개만 빌릴 수 있을까요? 끝나고 바로 사서 드릴게요!",
+          "meaning": "不好意思，能借我三节电池吗？录完我马上去买新的还你！"
+        },
+        {
+          "expr": "응원봉 건전지가 다 닳았는데 혹시 여분 가지고 계신 분 있나요?",
+          "meaning": "应援棒电池没电了，请问有人带了备用的吗？"
+        }
+      ],
+      "note": "韩国说 7 号电池直接说 AAA 건전지。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-37",
+      "lang": "ko",
+      "scene": "sanok",
+      "tag": "中间外出 · 询问再集合时间 · 变体 3",
+      "situation": "第一轮点名结束后离进场还有一段时间，想先去附近喝口热饮并确认最晚回来的时间。（第 3 组实战反应练习）",
+      "other": "지금 잠깐 자리 비우셔도 되는데 시간 꼭 지켜주세요.",
+      "otherZh": "现在可以暂时离开一下，但一定要遵守时间。",
+      "answer": "네! 혹시 몇 시까지 여기로 다시 모이면 될까요?",
+      "answerZh": "好的！请问几点之前回到这里再集合就可以呢？",
+      "alternatives": [
+        {
+          "expr": "재집합 시간이 정확히 몇 시인지 한 번만 더 알려주실 수 있나요?",
+          "meaning": "能再告诉我一次再集合的准确时间是几点吗？"
+        },
+        {
+          "expr": "근처 카페 갔다 오려고 하는데, 몇 시 전까지 오면 안전할까요?",
+          "meaning": "我想去附近咖啡店坐会儿，几点之前回来比较稳妥？"
+        }
+      ],
+      "note": "预录中间重新集合叫 재집합。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-38",
+      "lang": "ko",
+      "scene": "sanok",
+      "tag": "整队核对 · 询问前后号码 · 变体 3",
+      "situation": "再集合时间到了，大家按编号整队，你想确认眼前这位粉丝是几号。（第 3 组实战反应练习）",
+      "other": "네, 여기 뒷번호 줄이에요.",
+      "otherZh": "嗯，这里是后面的号码队伍。",
+      "answer": "안녕하세요! 혹시 몇 번이세요? 제가 앞번호라 순서 확인하려고요.",
+      "answerZh": "你好！请问你是几号呀？我前面顺位想确认一下。",
+      "alternatives": [
+        {
+          "expr": "실례합니다, 혹시 제 앞뒤 번호 분 계실까요?",
+          "meaning": "打扰一下，请问有我前后号码的朋友吗？"
+        },
+        {
+          "expr": "저 이 번호대인데 이쪽에 서면 맞나요?",
+          "meaning": "我是这个号段的，站在这边对吗？"
+        }
+      ],
+      "note": "整队时习惯互相问 몇 번이세요（你是几号）。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-39",
+      "lang": "ko",
+      "scene": "sanok",
+      "tag": "本放候补 · 询问候补名额 · 变体 3",
+      "situation": "预录结束后，你想留在现场排本放直播的候补名单。（第 3 组实战反应练习）",
+      "other": "사녹 인원 먼저 이동할게요. 본방 대기하실 분들은 이쪽으로 모여주세요.",
+      "otherZh": "预录人员先移动哦，要等本放直播的朋友请往这边集合。",
+      "answer": "저기요, 혹시 오늘 본방 예비 번호도 받을 수 있을까요?",
+      "answerZh": "不好意思，请问今天本放直播的候补号码也能领吗？",
+      "alternatives": [
+        {
+          "expr": "본방 입장 인원 몇 명까지 들어갈 수 있는지 혹시 알 수 있을까요?",
+          "meaning": "请问大概能知道本放直播能放多少名粉丝进去吗？"
+        },
+        {
+          "expr": "저 예비 번호 받으려고 하는데 어디 줄 서면 되나요?",
+          "meaning": "我想领候补号，请问排哪一队就可以？"
+        }
+      ],
+      "note": "直播候补名额通常叫 예비 번호。",
+      "addedDate": "2026-11-27"
+    },
+    {
+      "id": "auto-pool-40",
+      "lang": "ko",
+      "scene": "fandom",
+      "tag": "现场换卡 · 寻找李相沅小卡 · 变体 3",
+      "situation": "拆完专辑或满额卡后，旁边同担问你在找谁的小卡、想换谁。（第 3 组实战反应练习）",
+      "other": "혹시 누구 팬이세요? 누구 포카 찾으세요?",
+      "otherZh": "请问你是谁的粉丝呀？在找谁的小卡呢？",
+      "answer": "저는 이상원 팬이에요! 혹시 상원이 포카 있으실까요? 저한테 있는 거랑 교환 가능해요!",
+      "answerZh": "我是李相沅的粉丝！请问你有相沅的小卡吗？可以用我手里的跟你换！",
+      "alternatives": [
+        {
+          "expr": "저 상원이 구하고 있어요! 혹시 상원이 나오셨나요?",
+          "meaning": "我在求相沅的卡！请问你抽到相沅了吗？"
+        },
+        {
+          "expr": "이상원 찾고 있는데, 혹시 어떤 멤버 구하세요?",
+          "meaning": "我在找李相沅，请问你在求哪位成员呀？"
+        }
+      ],
+      "note": "换卡高频词：포카（小卡）、구하다（求/收）、교환（交换）。",
+      "addedDate": "2026-11-27"
+    },
     {
       "id": "auto-pool-21",
       "lang": "ko",
